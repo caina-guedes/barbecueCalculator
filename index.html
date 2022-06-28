@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>churrascômetro</title>
+</head>
+
+<body>
+    <div id="containerInicial">
+        <h1>churrascômetro</h1>
+        <input type="number" id='adultos' placeholder="Quantidade de Adultos" min="0">
+
+        <div class="miniContainer">
+            <label for="carne">Carne:   </label>
+            <h2 id="carne">10kg</h2>
+        </div>
+
+        <input type="number" id='criancas' placeholder="Quantidade de Crianças" min="0">
+
+        <div class="miniContainer">
+            <label for="cerveja"> cerveja:   </label>
+            <h2 id="cerveja">5l</h2>
+        </div>
+
+        <input type="number" id='duracao' placeholder="Duração(h)" min="0">
+        
+        <div class="miniContainer">
+            <label for="agua"> refri/água:   </label>
+            <h2 id="agua">5l</h2>
+        </div>
+
+        <div id="buttonWrapper">
+            <input type="button" onclick="calcular()" value="calcular" id="calcular">
+            <input type="button" onclick="retornar()" value="voltar" id="voltar">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
